@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside id="modal-filter" class="modal-filter">
+        <div class="modal-wrapper js-modal-stop">
+            <div class="modal-header">
+                <button class="modal-close"></button>
+                <div class="header-text">Filtres</div>
+            </div>
+            <div class="modal-container" style="margin: 5px 5px;">
+                <div class="form-measure">
+                    <div class="measure-label">
+                        <div style="width: 20px; height: 20px; background: url('/search.svg') center center no-repeat;"></div>
+                    </div>
+                    <div style="max-width: 100%">
+                        <input type="search" id="words" name="words" placeholder="Mots clés" class="input-filter-without-border form-control">
+                    </div>
+                </div>
+                <div class="filter-footer">
+                    <button class="filter-reinit">Réinitialiser</button>
+                    <button class="filter-save">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+<script src="filter-modal.js"></script>
+</html>
