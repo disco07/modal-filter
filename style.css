@@ -99,48 +99,93 @@ body, html {
     height: 73px;
 }
 
+.filter-save,
 .filter-reinit {
     display: inline-flex;
     flex-shrink: 0;
     flex: 1;
     align-items: center;
-    border: solid 1px #000000;
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.29;
-    border-radius: 4px;
+    border-radius: 20px;
     padding: 12px 30px;
     width: fit-content;
     max-height: 42px;
     transition: all .3s ease-out;
     min-height: 42px;
     user-select: none;
-    background-color: transparent;
-    color: #0d0d0d;
     margin-right: 15px;
 }
 
+.filter-reinit {
+    border: solid 1px #000000;
+    background-color: transparent;
+    color: #0d0d0d;
+}
+
 .filter-save {
-    display: inline-flex;
-    flex-shrink: 0;
-    flex: 1;
-    align-items: center;
     border: solid 1px #fff;
-    justify-content: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.29;
-    border-radius: 4px;
-    padding: 12px 30px;
-    width: fit-content;
-    max-height: 42px;
-    transition: all .3s ease-out;
-    min-height: 42px;
-    user-select: none;
     background-color: #161d31;
     color: #fff;
-    margin-right: 15px;
+}
+
+.inputStyle-radio div label input[type="radio"] {
+    display: none;
+}
+
+.inputStyle-radio div label span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: lightgray;
+    padding: 0 12px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.inputStyle-radio div label span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.inputStyle-radio div label input[type="radio"]:checked ~ span {
+    background: #41444e;
+    color: #fff;
+}
+
+.inputStyle-checkbox div label input[type="checkbox"] {
+    display: none;
+}
+
+.inputStyle-checkbox div label span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: lightgray;
+    padding: 8px;
+    color: #000;
+    border-radius: 30px;
+    font-size: 12px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.inputStyle-checkbox div label input[type="checkbox"]:checked ~ span {
+    background: #41444e;
+    color: #fff;
+    border: 1px solid #fff;
 }
